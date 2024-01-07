@@ -1,5 +1,11 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
+
+def Home(request):
+    return render(request, 'home.html')
+
 def News(request):
-    return HttpResponse("<h1>This is our latest News</h1>")
+    return render(request, 'News.html')
+def Contact(request):
+    return render(request, 'Contact.html')

@@ -1,7 +1,9 @@
 
 from django.urls import path
-from NewsApp.views import News  # Import your actual view function
+from NewsApp.views import News, Home, Contact  # Import your actual view function
 
 urlpatterns = [
-    path('', News, name='News'),  # Add this line for the root path
+    path('', Home, name='Home'),
+    path('News/', News, name='News'),
+    path('Contact/', Contact, name='Contact'),# Add this line for the root path
 ]
