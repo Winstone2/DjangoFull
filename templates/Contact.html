@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-    <header>
-        <h1>This is our Contact Us page</h1>
-    </header>
-
-    <main >
-        <p>We welcome you to our Contact Us page.</p>
-    </main>
-
-
-
-</body>
-</html>
+{% block title %}Contact{% endblock %}
+{% block content %}
+    <h1>This is our Contact Page</h1>
+    <p>This is all about our Contact Page.</p>
+{% endblock %}
+    
